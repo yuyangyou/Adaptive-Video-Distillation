@@ -1,0 +1,32 @@
+from causvid.models.wan.wan_wrapper import WanDiffusionWrapper, WanTextEncoder, WanVAEWrapper
+from diffusers.utils import export_to_video
+import torch
+
+torch.set_grad_enabled(False)
+
+model = WanDiffusionWrapper().to("cuda").to(torch.float32)
+encoder = WanTextEncoder().to("cuda").to(torch.float32)
+vae = WanVAEWrapper().to("cuda").to(torch.float32)
+
+model.set_module_grad(
+    {
+        "model": False
+    }
+)
+
+text_prompts = [r"""A stylish woman walks down a Tokyo street filled with warm glowing neon and animated city signage. She wears a black leather jacket, a long red dress, and black boots, and carries a black purse. She wears sunglasses and red lipstick. She walks confidently and casually. The street is damp and reflective, creating a mirror effect of the colorful lights. Many pedestrians walk about."""]
+
+conditional_dict = encoder(
+    text_prompts=text_prompts
+)
+
+noise = torch.randn(
+    1, 21, 16, 60, 104, generator=torch.Generator().manual_seed(42), dtype=torch.float32
+).to("cuda")
+
+timetep = 999 * torch.ones([1, 21], device="cuda", dtype=torch.long)
+
+with torch.no_grad():
+    output = model(noise, conditional_dict, timetep)
+    output = model.interpolate(output)
+    print(output.size())
