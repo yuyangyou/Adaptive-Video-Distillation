@@ -1,7 +1,7 @@
 # Adaptive Video Distillation
 ### Mitigating Oversaturation and Temporal Collapse in Few-Step Generation
 
-[Project Page](https://yuyangyou.github.io/Adaptive-Video-Distillation.github.io/#)  
+[Project Page](https://Adaptive-Video-Distillation.github.io/)  
 
 <video width="480" height="270" controls>
   <source src="docs/sample.mp4" type="video/mp4">
