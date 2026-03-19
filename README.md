@@ -18,14 +18,12 @@
 
 This is the official repository for ADV (Adaptive Video Distillation) — a video model distillation method based on DMD（Distribution Matching Distillation）. It addresses oversaturation and slow-motion issues in video generation model distillation, and is capable of learning from new data during distillation training.
 
-## Method
-![main](docs/main.pdf)
 
 ## Environment Setup
 
 ```bash
-conda create -n causvid python=3.10 -y
-conda activate causvid
+conda create -n AVD python=3.10 -y
+conda activate AVD
 pip install torch torchvision 
 pip install -r requirements.txt 
 python setup.py develop
@@ -35,7 +33,7 @@ Also download the Wan base models from [here](https://github.com/Wan-Video/Wan2.
 
 ## Inference Example 
 
-First download the checkpoints: [Autoregressive Model](https://huggingface.co/tianweiy/CausVid/tree/main/autoregressive_checkpoint), [Bidirectional Model 1](https://huggingface.co/tianweiy/CausVid/tree/main/bidirectional_checkpoint1) or [Bidirectional Model 2](https://huggingface.co/tianweiy/CausVid/tree/main/bidirectional_checkpoint2) (performs slightly better). 
+First download the checkpoints: [Autoregressive Model](https://huggingface.co/).
 
 
 ### Inference Script
