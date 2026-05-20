@@ -98,4 +98,4 @@ Here is a arxiv version citation bib：
 
 ## Acknowledgments
 
-Our implementation is largely based on the [Causvid](https://github.com/tianweiy/CausVid) and [Wan](https://github.com/Wan-Video/Wan2.1) model suite.
+Our implementation is largely based on the [Causvid](https://github.com/tianweiy/CausVid) and [Wan](https://github.com/Wan-Video/Wan2.1) model suite. Thanks a lot!
