@@ -12,7 +12,7 @@ from viztracer import VizTracer
 torch.set_grad_enabled(False)
 
 # 配置
-checkpoint_folder = "./dmd_baseline_official"
+checkpoint_folder = "./checkpoint"
 config = OmegaConf.load("configs/wan_bidirectional_vif_from_scratch.yaml")
 output_dir = "./dmd_moviegen"
 os.makedirs(output_dir, exist_ok=True)
