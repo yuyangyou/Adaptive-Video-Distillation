@@ -33,7 +33,7 @@ Also download the Wan base models from [here](https://github.com/Wan-Video/Wan2.
 
 ## Inference Example 
 
-First download the checkpoints: [Autoregressive Model](https://huggingface.co/).
+First download the toy checkpoints: [model]([https://huggingface.co/](https://huggingface.co/adaptive-video-distillation/ADV/tree/main)).
 
 
 ### Inference Script
