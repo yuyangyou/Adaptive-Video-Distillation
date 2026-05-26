@@ -72,7 +72,7 @@ Bidirectional DMD Training
 
 ```bash
 torchrun --nnodes 1 --nproc_per_node=8 --master_port 29502 \
-    causvid/train_distillation_regression.py \
+    causvid/train_distillation_adv.py \
     --config_path configs/wan_bidirectional_dmd.yaml
 
 ```
