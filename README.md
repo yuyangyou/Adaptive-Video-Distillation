@@ -82,16 +82,12 @@ torchrun --nnodes 1 --nproc_per_node=8 --master_port 29502 \
 Here is a arxiv version citation bib：
 
 ```bib
-@misc{you2026adaptivevideodistillationmitigating,
-      title={Adaptive Video Distillation: Mitigating Oversaturation
-             and Temporal Collapse in Few-Step Generation},
-      author={Yuyang You and Yongzhi Li and Jiahui Li
-              and Yadong Mu and Quan Chen and Peng Jiang},
-      year={2026},
-      eprint={2603.21864},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2603.21864},
+@inproceedings{you2026adaptive,
+  title={Adaptive video distillation: Mitigating oversaturation and temporal collapse in few-step generation},
+  author={You, Yuyang and Li, Yongzhi and Li, Jiahui and Mu, Yadong and Chen, Quan and Jiang, Peng},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={43429--43439},
+  year={2026}
 }
 
 ```
